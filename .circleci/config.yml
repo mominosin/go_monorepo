@@ -10,9 +10,6 @@ jobs:
           name: Install Dependencies
           command: go get ./...
       - run:
-          name: Run tests
-          command: go test -v
-      - run:
           name: go build
           command: go build ./packages/main_app 
   build_second:
@@ -24,9 +21,6 @@ jobs:
       - run:
           name: Install Dependencies
           command: go get ./...
-      - run:
-          name: Run tests
-          command: go test -v
       - run:
           name: Run build
           command: go build ./packages/second_app
