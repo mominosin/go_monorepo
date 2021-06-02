@@ -1,0 +1,9 @@
+version: '2.1'
+orbs:
+  continuation: circleci/continuation@0.1.3
+workflows:
+  use-my-orb:
+    jobs:
+      - continuation/continue:
+          configuration_path: ./config.yml
+
